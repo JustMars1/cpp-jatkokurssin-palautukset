@@ -3,6 +3,8 @@
 #include <cstdint>
 #include <mutex>
 
+#include <stddef.h> // lisätty palautuksen jälkeen
+
 // 2 Tililtä nostaminen (1p)
 // Kirjoita ohjelma, jossa on kaksi säiettä, ja jotka käsittelevät yhteistä pankkitiliä. Käytä säikeiden luomiseen
 // std::thread-luokkaa. Ensimmäinen säie tallettaa rahaa tilille, kun taas toinen nostaa sitä. Nosto- ja talletustapahtumia

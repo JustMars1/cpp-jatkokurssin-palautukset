@@ -5,6 +5,9 @@
 #include <atomic>
 #include <cstdint>
 
+#include <vector>   // lisätty palautuksen jälkeen
+#include <stddef.h> // lisätty palautuksen jälkeen
+
 // 1 Summan laskeminen rinnakkaisesti (1p)
 // Kirjoita ohjelma, joka laskee (suuren) taulukon (esim. vektorin) elementtien summan käyttäen useita säikeitä. Jaa
 // taulukko yhtä suuriin osiin, anna jokainen osa eri säikeelle ja anna niiden laskea oman osansa summa. Lopuksi yhdistä

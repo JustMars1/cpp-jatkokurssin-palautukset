@@ -4,6 +4,9 @@
 #include <chrono>
 #include <cmath>
 
+#include <vector>   // lisätty palautuksen jälkeen
+#include <stddef.h> // lisätty palautuksen jälkeen
+
 // 3 Rinnakkaista pelin laskentaa (2p)
 // Oletetaan, että pelin suorittamille toimenpiteille (tekoälyn ajaminen, pelimaailman päivitys, jne.) on määritelty
 // yhteinen yliluokka Game_Task. Luokassa on määritelty puhdas virtuaalifunktio perform(), joka suorittaa ko. toimenpiteen:
