@@ -7,6 +7,7 @@
 #include <chrono>
 #include <algorithm>
 #include <iostream>
+#include <cstddef>
 
 // 7 Työjono säikeille (3p) - MINIPROJEKTI 1
 // Suunnittele ja toteuta luokka TaskQueue (”työjono”). Työjonoon voidaan lisätä ulkopuolelta työtehtäviä, joita sitten
@@ -101,9 +102,9 @@ private:
 int main() {
     TaskQueue task_queue(std::max(std::thread::hardware_concurrency(), static_cast<unsigned>(1)));
     
-    constexpr size_t NUMBER_OF_TASKS = 100;
+    constexpr std::size_t NUMBER_OF_TASKS = 100;
     
-    for (size_t i = 0; i < NUMBER_OF_TASKS; i++) {
+    for (std::size_t i = 0; i < NUMBER_OF_TASKS; i++) {
         task_queue.addJob(Game_Task());
     }
     
